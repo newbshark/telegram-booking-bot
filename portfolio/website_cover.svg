@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 880" width="1320" height="880">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <linearGradient id="accentGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadowLg" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="25" stdDeviation="25" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="35" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1320" height="880" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Glow Spheres -->
+  <circle cx="150" cy="150" r="180" fill="#6366f1" opacity="0.18" filter="url(#glowPurple)"/>
+  <circle cx="1200" cy="700" r="220" fill="#ec4899" opacity="0.14" filter="url(#glowPurple)"/>
+  <circle cx="950" cy="200" r="140" fill="#06b6d4" opacity="0.12" filter="url(#glowPurple)"/>
+
+  <!-- Subtle Grid Lines -->
+  <g stroke="#334155" stroke-opacity="0.2" stroke-width="1">
+    <line x1="80" y1="0" x2="80" y2="880"/>
+    <line x1="240" y1="0" x2="240" y2="880"/>
+    <line x1="400" y1="0" x2="400" y2="880"/>
+    <line x1="560" y1="0" x2="560" y2="880"/>
+    <line x1="720" y1="0" x2="720" y2="880"/>
+    <line x1="880" y1="0" x2="880" y2="880"/>
+    <line x1="1040" y1="0" x2="1040" y2="880"/>
+    <line x1="1200" y1="0" x2="1200" y2="880"/>
+    <line x1="0" y1="120" x2="1320" y2="120"/>
+    <line x1="0" y1="280" x2="1320" y2="280"/>
+    <line x1="0" y1="440" x2="1320" y2="440"/>
+    <line x1="0" y1="600" x2="1320" y2="600"/>
+    <line x1="0" y1="760" x2="1320" y2="760"/>
+  </g>
+
+  <!-- LEFT SECTION: HEADLINES & SPECS -->
+  <g transform="translate(80, 100)">
+    <!-- Pill Badge -->
+    <rect width="260" height="38" rx="19" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.5"/>
+    <circle cx="22" cy="19" r="6" fill="#10b981"/>
+    <text x="38" y="24" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">ПОРТФОЛИО: РАЗРАБОТКА САЙТОВ</text>
+
+    <!-- Main Title -->
+    <text x="0" y="95" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="52" font-weight="900" letter-spacing="-1">
+      ВЕБ-СЕРВИС И САЙТ
+    </text>
+    <text x="0" y="155" fill="url(#primaryGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="900" letter-spacing="-0.5">
+      ОНЛАЙН-ЗАПИСИ И УСЛУГ
+    </text>
+
+    <!-- Subtitle / Value Proposition -->
+    <text x="0" y="210" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="400">
+      Современный адаптивный лендинг с личным кабинетом,
+    </text>
+    <text x="0" y="240" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="400">
+      онлайн-бронированием слотов и интеграцией с Telegram.
+    </text>
+
+    <!-- Feature Tags Grid -->
+    <g transform="translate(0, 290)">
+      <!-- Tag 1 -->
+      <rect x="0" y="0" width="220" height="46" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="24" cy="23" r="4" fill="#38bdf8"/>
+      <text x="40" y="28" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">100% Адаптивный UI</text>
+
+      <!-- Tag 2 -->
+      <rect x="235" y="0" width="240" height="46" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="259" cy="23" r="4" fill="#a855f7"/>
+      <text x="275" y="28" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">FSM Бронирование слотов</text>
+
+      <!-- Tag 3 -->
+      <rect x="0" y="60" width="220" height="46" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="24" cy="83" r="4" fill="#10b981"/>
+      <text x="40" y="88" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Связка с Telegram Bot</text>
+
+      <!-- Tag 4 -->
+      <rect x="235" y="60" width="240" height="46" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="259" cy="83" r="4" fill="#ec4899"/>
+      <text x="275" y="88" fill="#f1f5f9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">PageSpeed 98/100 (Быстрый)</text>
+    </g>
+
+    <!-- Key Metrics Cards -->
+    <g transform="translate(0, 440)">
+      <!-- Metric 1 -->
+      <rect x="0" y="0" width="145" height="100" rx="16" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <text x="24" y="44" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800">&lt; 0.6с</text>
+      <text x="24" y="74" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Загрузка сайта</text>
+
+      <!-- Metric 2 -->
+      <rect x="165" y="0" width="145" height="100" rx="16" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <text x="189" y="44" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800">100%</text>
+      <text x="189" y="74" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Адаптив Mobile</text>
+
+      <!-- Metric 3 -->
+      <rect x="330" y="0" width="145" height="100" rx="16" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <text x="354" y="44" fill="#a855f7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800">+45%</text>
+      <text x="354" y="74" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Конверсия в лид</text>
+    </g>
+  </g>
+
+  <!-- RIGHT SECTION: BROWSER MOCKUP & DASHBOARD UI -->
+  <g transform="translate(630, 85)" filter="url(#shadowLg)">
+    <!-- Browser Window Frame -->
+    <rect width="630" height="690" rx="20" fill="url(#cardGrad)" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="2"/>
+
+    <!-- Browser Header Bar -->
+    <rect width="630" height="48" rx="20" fill="#0f172a"/>
+    <rect y="30" width="630" height="18" fill="#0f172a"/> <!-- remove bottom round -->
+    <line x1="0" y1="48" x2="630" y2="48" stroke="#334155" stroke-width="1"/>
+
+    <!-- Window Dots -->
+    <circle cx="28" cy="24" r="6" fill="#ef4444"/>
+    <circle cx="48" cy="24" r="6" fill="#f59e0b"/>
+    <circle cx="68" cy="24" r="6" fill="#10b981"/>
+
+    <!-- Search/Address Bar -->
+    <rect x="100" y="10" width="380" height="28" rx="8" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
+    <text x="120" y="28" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">🔒 https://studio-booking.pro/dashboard</text>
+
+    <!-- LIVE BADGE -->
+    <rect x="520" y="12" width="85" height="24" rx="12" fill="#065f46"/>
+    <circle cx="534" cy="24" r="4" fill="#34d399"/>
+    <text x="545" y="28" fill="#a7f3d0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">ONLINE</text>
+
+    <!-- Inside Web Content -->
+    <!-- Navigation Bar inside app -->
+    <g transform="translate(25, 68)">
+      <text x="10" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800">MYSTUDIO // BOOKING</text>
+      <rect x="440" y="4" width="130" height="32" rx="8" fill="url(#primaryGrad)"/>
+      <text x="460" y="25" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">+ Новая запись</text>
+    </g>
+
+    <!-- Stat Widget 1 -->
+    <g transform="translate(25, 125)">
+      <rect width="180" height="90" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="18" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Записей за сегодня</text>
+      <text x="18" y="68" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">18 слотов</text>
+      <circle cx="150" cy="50" r="16" fill="#3b82f6" fill-opacity="0.2"/>
+      <text x="144" y="55" fill="#60a5fa" font-size="14">📅</text>
+    </g>
+
+    <!-- Stat Widget 2 -->
+    <g transform="translate(225, 125)">
+      <rect width="180" height="90" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="18" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Выручка (руб)</text>
+      <text x="18" y="68" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800">48 500 ₽</text>
+      <circle cx="150" cy="50" r="16" fill="#10b981" fill-opacity="0.2"/>
+      <text x="144" y="55" fill="#34d399" font-size="14">💳</text>
+    </g>
+
+    <!-- Stat Widget 3 -->
+    <g transform="translate(425, 125)">
+      <rect width="180" height="90" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="18" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Telegram Sync</text>
+      <text x="18" y="68" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800">Синхронно</text>
+      <circle cx="150" cy="50" r="16" fill="#0284c7" fill-opacity="0.2"/>
+      <text x="144" y="55" fill="#38bdf8" font-size="14">⚡</text>
+    </g>
+
+    <!-- Table of Bookings Header -->
+    <g transform="translate(25, 235)">
+      <rect width="580" height="280" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      
+      <!-- Table Header -->
+      <rect width="580" height="42" rx="14" fill="#0f172a"/>
+      <rect y="24" width="580" height="18" fill="#0f172a"/>
+      <text x="20" y="26" fill="#94a3b8" font-size="12" font-weight="600">КЛИЕНТ</text>
+      <text x="180" y="26" fill="#94a3b8" font-size="12" font-weight="600">УСЛУГА</text>
+      <text x="360" y="26" fill="#94a3b8" font-size="12" font-weight="600">ВРЕМЯ</text>
+      <text x="470" y="26" fill="#94a3b8" font-size="12" font-weight="600">СТАТУС</text>
+      <line x1="0" y1="42" x2="580" y2="42" stroke="#334155" stroke-width="1"/>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 43)">
+        <text x="20" y="35" fill="#f8fafc" font-size="13" font-weight="600">Михаил Соколов</text>
+        <text x="20" y="52" fill="#64748b" font-size="11">+7 (999) 456-78-90</text>
+        <text x="180" y="42" fill="#cbd5e1" font-size="13">Комплекс "Премиум"</text>
+        <text x="360" y="42" fill="#cbd5e1" font-size="13">Сегодня, 14:00</text>
+        <rect x="470" y="26" width="90" height="24" rx="12" fill="#065f46"/>
+        <text x="486" y="42" fill="#34d399" font-size="11" font-weight="700">Оплачено</text>
+        <line x1="15" y1="65" x2="565" y2="65" stroke="#334155" stroke-opacity="0.5" stroke-width="1"/>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 110)">
+        <text x="20" y="35" fill="#f8fafc" font-size="13" font-weight="600">Елена Романова</text>
+        <text x="20" y="52" fill="#64748b" font-size="11">+7 (921) 123-44-55</text>
+        <text x="180" y="42" fill="#cbd5e1" font-size="13">Экспресс-запись</text>
+        <text x="360" y="42" fill="#cbd5e1" font-size="13">Сегодня, 16:30</text>
+        <rect x="470" y="26" width="90" height="24" rx="12" fill="#1e3a8a"/>
+        <text x="480" y="42" fill="#60a5fa" font-size="11" font-weight="700">Подтвержден</text>
+        <line x1="15" y1="65" x2="565" y2="65" stroke="#334155" stroke-opacity="0.5" stroke-width="1"/>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 180)">
+        <text x="20" y="35" fill="#f8fafc" font-size="13" font-weight="600">Александр Волков</text>
+        <text x="20" y="52" fill="#64748b" font-size="11">+7 (903) 777-11-22</text>
+        <text x="180" y="42" fill="#cbd5e1" font-size="13">Индивидуальный сет</text>
+        <text x="360" y="42" fill="#cbd5e1" font-size="13">Завтра, 11:00</text>
+        <rect x="470" y="26" width="90" height="24" rx="12" fill="#831843"/>
+        <text x="492" y="42" fill="#f472b6" font-size="11" font-weight="700">Новый</text>
+      </g>
+    </g>
+
+    <!-- Bottom Tech Stack Banner inside browser -->
+    <g transform="translate(25, 535)">
+      <rect width="580" height="110" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="20" y="32" fill="#94a3b8" font-size="12" font-weight="600">СТЕК И ТЕХНОЛОГИИ ПРОЕКТА:</text>
+      
+      <!-- Tech Pills -->
+      <g transform="translate(20, 50)">
+        <rect x="0" y="0" width="80" height="32" rx="8" fill="#1e293b"/>
+        <text x="18" y="21" fill="#38bdf8" font-size="13" font-weight="700">React</text>
+
+        <rect x="90" y="0" width="95" height="32" rx="8" fill="#1e293b"/>
+        <text x="105" y="21" fill="#818cf8" font-size="13" font-weight="700">Node.js</text>
+
+        <rect x="195" y="0" width="85" height="32" rx="8" fill="#1e293b"/>
+        <text x="210" y="21" fill="#34d399" font-size="13" font-weight="700">Python</text>
+
+        <rect x="290" y="0" width="85" height="32" rx="8" fill="#1e293b"/>
+        <text x="305" y="21" fill="#f59e0b" font-size="13" font-weight="700">SQLite</text>
+
+        <rect x="385" y="0" width="75" height="32" rx="8" fill="#1e293b"/>
+        <text x="400" y="21" fill="#38bdf8" font-size="13" font-weight="700">Nginx</text>
+
+        <rect x="470" y="0" width="65" height="32" rx="8" fill="#1e293b"/>
+        <text x="482" y="21" fill="#f43f5e" font-size="13" font-weight="700">REST</text>
+      </g>
+    </g>
+  </g>
+</svg>
