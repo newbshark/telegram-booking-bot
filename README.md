@@ -12,7 +12,27 @@
 ## 📂 Структура репозитория
 
 ```text
-├── demo-bot/            # Полнофункциональный Telegram-бот для онлайн-записи и услуг
+├── tutor-radar/         # Радар учеников и школьных проектов (FL.ru, Freelancehunt, TG)
+│   ├── analyzer.py      # Классификация: Unity, C#, ОГЭ/ЕГЭ, школьные проекты (ИИП)
+│   ├── scanner.py       # Парсер живых RSS и каналов без демпинговых бирж
+│   ├── watcher.py       # Фоновый демон с пересылкой в закрытый Telegram-канал
+│   └── connect_channel.py # Утилита автоматической привязки приватного канала
+│
+├── tutor-bot/           # Облачный бот-комбайн наставника (Railway 24/7)
+│   ├── bot.py           # Aiogram 3: Mini App, квизы, CRM-панель и уведомления
+│   ├── keyboards.py     # Мобильно-адаптированная клавиатура
+│   ├── database.py      # Хранилище лидов и реферальной системы на SQLite
+│   └── Dockerfile       # Контейнеризация под Railway Volume
+│
+├── tutor-webapp/        # Telegram Mini App (Glassmorphism Cyber Studio)
+│   └── public/index.html # SPA с экспресс-диагностикой, тарифами и haptic feedback
+│
+├── docs/marketing/      # Стратегии привлечения учеников (0 ₽ бюджета)
+│   ├── MATH_TUTORS_KRASNODAR.md # База репетиторов для партнерки
+│   ├── TUTOR_PARTNERSHIP.md     # Шаблоны партнерских офферов (2 000 ₽ за ученика)
+│   └── YANDEX_USLUGI_VADIM.md   # Оформление продающих профилей
+│
+├── demo-bot/            # Базовый Telegram-бот для коммерческой онлайн-записи
 │   ├── main.py          # Основной цикл Aiogram 3, роутеры и FSM-сценарии
 │   ├── config.py        # Настройки, чтение .env и прайс-лист услуг
 │   ├── database.py      # SQLite база данных (клиенты, слоты, бронирования)
